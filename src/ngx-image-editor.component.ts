@@ -567,7 +567,7 @@ export interface IEditorOptions {
   AspectRatios?: Array<RatioType>;
 }
 
-export type RatioType = "16:9" | '4:3' | '1:1' | '2:3' | 'Default';
+export type RatioType = "16:9" | '4:3' | '1:1' | '2:3' | '2:1' | 'Default';
 
 export class EditorOptions implements IEditorOptions {
   ImageName: string;
@@ -597,6 +597,9 @@ export const NGX_DEFAULT_RATIOS: Array<NgxAspectRatio> = [
   },
   {
     value: 2 / 3, text: '2:3'
+  },
+  {
+    value: 2 / 1, text: '2:1'
   },
   {
     value: 0 / 0, text: 'Default'
